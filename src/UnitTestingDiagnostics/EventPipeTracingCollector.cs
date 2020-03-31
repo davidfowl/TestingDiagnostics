@@ -62,7 +62,7 @@ namespace UnitTestingDiagnostics
             catch (ServerNotAvailableException)
             {
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
                 // We can't even start the session, wait until the process boots up again to start another metrics thread
