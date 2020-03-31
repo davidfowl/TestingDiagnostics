@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UnitTestingDiagnostics\UnitTestingDiagnostics.Collector.csproj" />
+    <ProjectReference Include="..\..\src\UnitTestingDiagnostics\UnitTestingDiagnostics.Collector.csproj" />
   </ItemGroup>
-
+  
 </Project>
