@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <IsTestProject>true</IsTestProject>
+    <IsUnitTestProject>true</IsUnitTestProject>
+    <IsPackable>false</IsPackable>
+    <TestRunnerName>XUnit</TestRunnerName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\UnitTestingDiagnostics\UnitTestingDiagnostics.Collector.csproj" />
+  </ItemGroup>
+
+</Project>

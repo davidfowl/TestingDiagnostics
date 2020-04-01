@@ -7,23 +7,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{87EE86A8-1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B73852EE-CCF5-4A31-AA53-C0FD24DCEFD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestingDiagnostics.Collector", "src\UnitTestingDiagnostics\UnitTestingDiagnostics.Collector.csproj", "{851EA710-0DFA-4A47-B602-E695A8D00F31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestingDiagnostics.Collector", "src\UnitTestingDiagnostics\UnitTestingDiagnostics.Collector.csproj", "{851EA710-0DFA-4A47-B602-E695A8D00F31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "test\XUnitTestProject1\XUnitTestProject1.csproj", "{C614AAAF-4B1A-434B-952F-22C3E2A987E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTestProject1", "test\XUnitTestProject1\XUnitTestProject1.csproj", "{C614AAAF-4B1A-434B-952F-22C3E2A987E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject2", "test\XUnitTestProject2\XUnitTestProject2.csproj", "{D192BF01-31A9-472D-BF03-8A992CD06C3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTestProject2", "test\XUnitTestProject2\XUnitTestProject2.csproj", "{D192BF01-31A9-472D-BF03-8A992CD06C3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject3", "test\XUnitTestProject3\XUnitTestProject3.csproj", "{43C973E8-3ECA-4316-95E0-1737A53A7966}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTestProject3", "test\XUnitTestProject3\XUnitTestProject3.csproj", "{43C973E8-3ECA-4316-95E0-1737A53A7966}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject4", "test\XUnitTestProject4\XUnitTestProject4.csproj", "{35FD3FAA-E945-4A45-9206-7DF928C31037}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTestProject4", "test\XUnitTestProject4\XUnitTestProject4.csproj", "{35FD3FAA-E945-4A45-9206-7DF928C31037}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject5", "test\XUnitTestProject5\XUnitTestProject5.csproj", "{3AEFF36C-4495-4385-A7CE-8102D031006B}"
 EndProject
 Global
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F0C61B89-2976-435F-AD23-6A573D6BF233}
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
@@ -93,6 +89,21 @@ Global
 		{35FD3FAA-E945-4A45-9206-7DF928C31037}.Release|x64.Build.0 = Release|Any CPU
 		{35FD3FAA-E945-4A45-9206-7DF928C31037}.Release|x86.ActiveCfg = Release|Any CPU
 		{35FD3FAA-E945-4A45-9206-7DF928C31037}.Release|x86.Build.0 = Release|Any CPU
+		{3AEFF36C-4495-4385-A7CE-8102D031006B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AEFF36C-4495-4385-A7CE-8102D031006B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AEFF36C-4495-4385-A7CE-8102D031006B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3AEFF36C-4495-4385-A7CE-8102D031006B}.Debug|x64.Build.0 = Debug|Any CPU
+		{3AEFF36C-4495-4385-A7CE-8102D031006B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3AEFF36C-4495-4385-A7CE-8102D031006B}.Debug|x86.Build.0 = Debug|Any CPU
+		{3AEFF36C-4495-4385-A7CE-8102D031006B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AEFF36C-4495-4385-A7CE-8102D031006B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AEFF36C-4495-4385-A7CE-8102D031006B}.Release|x64.ActiveCfg = Release|Any CPU
+		{3AEFF36C-4495-4385-A7CE-8102D031006B}.Release|x64.Build.0 = Release|Any CPU
+		{3AEFF36C-4495-4385-A7CE-8102D031006B}.Release|x86.ActiveCfg = Release|Any CPU
+		{3AEFF36C-4495-4385-A7CE-8102D031006B}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{851EA710-0DFA-4A47-B602-E695A8D00F31} = {B73852EE-CCF5-4A31-AA53-C0FD24DCEFD3}
@@ -100,5 +111,9 @@ Global
 		{D192BF01-31A9-472D-BF03-8A992CD06C3A} = {87EE86A8-1E3A-4B2C-B841-A2768E7E64EF}
 		{43C973E8-3ECA-4316-95E0-1737A53A7966} = {87EE86A8-1E3A-4B2C-B841-A2768E7E64EF}
 		{35FD3FAA-E945-4A45-9206-7DF928C31037} = {87EE86A8-1E3A-4B2C-B841-A2768E7E64EF}
+		{3AEFF36C-4495-4385-A7CE-8102D031006B} = {87EE86A8-1E3A-4B2C-B841-A2768E7E64EF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0C61B89-2976-435F-AD23-6A573D6BF233}
 	EndGlobalSection
 EndGlobal
