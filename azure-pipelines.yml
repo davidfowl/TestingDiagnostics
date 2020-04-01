@@ -1,0 +1,45 @@
+trigger:
+- master
+
+pr:
+- master
+
+stages:
+- stage: Test
+    jobs:
+    - template: /eng/common/templates/jobs/jobs.yml
+      parameters:
+        artifacts:
+          publish:
+            artifacts: true
+            logs: true
+        workspace:
+          clean: all
+        jobs:
+        - job: Windows_NT
+          timeoutInMinutes: 90
+          pool:
+            vmimage: windows-latest
+          strategy:
+            matrix:
+              Build_Release:
+                _BuildConfig: Release
+              Build_Debug:
+                _BuildConfig: Debug
+          preSteps:
+          - checkout: self
+            clean: true
+          steps:
+          - powershell: eng\common\build.ps1
+              -configuration $(_BuildConfig) 
+              -prepareMachine
+              -ci
+              -restore
+              -test
+              -projects $(Build.SourcesDirectory)\tests\Helix.proj
+              /bl:$(Build.SourcesDirectory)\artifacts\log\$(_BuildConfig)\Helix.binlog
+              /p:RestoreUsingNuGetTargets=false
+            displayName: Run Helix Tests
+            env:
+              SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+              HelixAccessToken: ''
